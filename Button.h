@@ -20,9 +20,13 @@ private:
     color originalFill, hoverFill, pressFill;
 
 public:
+    Button();
     Button(Quad box, std::string label);
+
     /* Uses OpenGL to draw the box with the label on top */
     virtual void draw();
+
+    point getCenter();
 
     /* Returns true if the coordinate is inside the box */
     bool isOverlapping(int x, int y) const;

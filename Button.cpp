@@ -63,3 +63,11 @@ void Button::moves(std::string direction) {
 void Button::click(function<void()> callback) {
     callback();
 }
+
+Button::Button() {
+
+}
+
+point Button::getCenter() {
+    return box.getCenter();
+}

@@ -13,8 +13,8 @@ struct color {
 };
 
 struct point {
-    int x;
-    int y;
+    double x;
+    double y;
 };
 
 class Quad {
@@ -22,19 +22,19 @@ private:
     color fill;
     point center;
     point rightBottom;
-    unsigned int width;
-    unsigned int height;
+    double width;
+    double height;
 
 public:
     Quad();
-    Quad(color fill, point center, unsigned int width, unsigned int height);
+    Quad(color fill, point center,  double width,  double height);
 
-    int getCenterX() const;
-    int getLeftX() const;
-    int getRightX() const;
-    int getCenterY() const;
-    int getTopY() const;
-    int getBottomY() const;
+    double getCenterX() const;
+    double getLeftX() const;
+    double getRightX() const;
+    double getCenterY() const;
+    double getTopY() const;
+    double getBottomY() const;
     point getCenter() const;
 
     double getRed() const;

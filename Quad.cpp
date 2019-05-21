@@ -16,35 +16,35 @@ Quad::Quad() {
     height = 50;
 }
 
-Quad::Quad(color fill, point center, unsigned int width, unsigned int height) {
+Quad::Quad(color fill, point center, double width, double height) {
     this->fill = fill;
     this->center = center;
     this->width = width;
     this->height = height;
 }
 
-int Quad::getCenterX() const {
+double Quad::getCenterX() const {
     return center.x;
 }
 
-int Quad::getLeftX() const {
-    return center.x - (width / 2);
+double Quad::getLeftX() const {
+    return center.x - (width / 2.0);
 }
 
-int Quad::getRightX() const {
-    return center.x + (width / 2);
+double Quad::getRightX() const {
+    return center.x + (width / 2.0);
 }
 
-int Quad::getCenterY() const {
+double Quad::getCenterY() const {
     return center.y;
 }
 
-int Quad::getTopY() const {
-    return center.y - (height / 2);
+double Quad::getTopY() const {
+    return center.y - (height / 2.0);
 }
 
-int Quad::getBottomY() const {
-    return center.y + (height / 2);
+double Quad::getBottomY() const {
+    return center.y + (height / 2.0);
 }
 
 point Quad::getCenter() const {

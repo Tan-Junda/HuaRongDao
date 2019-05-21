@@ -48,14 +48,9 @@ void display(){
     /*
      *  Draw here
      */
-    glColor3f(0.1,0.3,0.4);
-    glBegin(GL_TRIANGLE_FAN);
-    glVertex2i(200,150);
-    glVertex2i(200,100);
-    glVertex2i(230,125);
-    glVertex2i(240,150);
-    glVertex2i(230,175);
-    glEnd();
+    Game game = Game(width,height);
+    game.draw_board();
+    game.draw_buttons();
     glFlush(); // Render now
 }
 
