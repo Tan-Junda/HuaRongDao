@@ -30,12 +30,6 @@ C:/Program Files/Common Files/freeglut/include/GL/glut.h
 freeglut_std.h
 C:/Program Files/Common Files/freeglut/include/GL/freeglut_std.h
 
-F:/summer_project/HuaRongDao/Button.cpp
-Button.h
-F:/summer_project/HuaRongDao/Button.h
-string
--
-
 F:/summer_project/HuaRongDao/Button.h
 Quad.h
 F:/summer_project/HuaRongDao/Quad.h
@@ -47,20 +41,16 @@ functional
 -
 
 F:/summer_project/HuaRongDao/Game.cpp
+iostream
+-
 Game.h
 F:/summer_project/HuaRongDao/Game.h
 
 F:/summer_project/HuaRongDao/Game.h
-
-F:/summer_project/HuaRongDao/Quad.cpp
-Quad.h
-F:/summer_project/HuaRongDao/Quad.h
-iostream
+vector
 -
 Button.h
 F:/summer_project/HuaRongDao/Button.h
-graphic.h
-F:/summer_project/HuaRongDao/graphic.h
 
 F:/summer_project/HuaRongDao/Quad.h
 

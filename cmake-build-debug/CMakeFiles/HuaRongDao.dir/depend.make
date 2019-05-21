@@ -8,8 +8,13 @@ CMakeFiles/HuaRongDao.dir/Button.cpp.obj: ../Button.h
 CMakeFiles/HuaRongDao.dir/Button.cpp.obj: ../Quad.h
 CMakeFiles/HuaRongDao.dir/Button.cpp.obj: ../graphic.h
 
+CMakeFiles/HuaRongDao.dir/Game.cpp.obj: C:/Program\ Files/Common\ Files/freeglut/include/GL/freeglut_std.h
+CMakeFiles/HuaRongDao.dir/Game.cpp.obj: C:/Program\ Files/Common\ Files/freeglut/include/GL/glut.h
+CMakeFiles/HuaRongDao.dir/Game.cpp.obj: ../Button.h
 CMakeFiles/HuaRongDao.dir/Game.cpp.obj: ../Game.cpp
 CMakeFiles/HuaRongDao.dir/Game.cpp.obj: ../Game.h
+CMakeFiles/HuaRongDao.dir/Game.cpp.obj: ../Quad.h
+CMakeFiles/HuaRongDao.dir/Game.cpp.obj: ../graphic.h
 
 CMakeFiles/HuaRongDao.dir/Quad.cpp.obj: C:/Program\ Files/Common\ Files/freeglut/include/GL/freeglut_std.h
 CMakeFiles/HuaRongDao.dir/Quad.cpp.obj: C:/Program\ Files/Common\ Files/freeglut/include/GL/glut.h
@@ -20,7 +25,9 @@ CMakeFiles/HuaRongDao.dir/Quad.cpp.obj: ../graphic.h
 
 CMakeFiles/HuaRongDao.dir/graphic.cpp.obj: C:/Program\ Files/Common\ Files/freeglut/include/GL/freeglut_std.h
 CMakeFiles/HuaRongDao.dir/graphic.cpp.obj: C:/Program\ Files/Common\ Files/freeglut/include/GL/glut.h
+CMakeFiles/HuaRongDao.dir/graphic.cpp.obj: ../Button.h
 CMakeFiles/HuaRongDao.dir/graphic.cpp.obj: ../Game.h
+CMakeFiles/HuaRongDao.dir/graphic.cpp.obj: ../Quad.h
 CMakeFiles/HuaRongDao.dir/graphic.cpp.obj: ../graphic.cpp
 CMakeFiles/HuaRongDao.dir/graphic.cpp.obj: ../graphic.h
 

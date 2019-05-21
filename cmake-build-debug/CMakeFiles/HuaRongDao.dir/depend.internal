@@ -9,8 +9,13 @@ CMakeFiles/HuaRongDao.dir/Button.cpp.obj
  F:/summer_project/HuaRongDao/Quad.h
  F:/summer_project/HuaRongDao/graphic.h
 CMakeFiles/HuaRongDao.dir/Game.cpp.obj
+ C:/Program Files/Common Files/freeglut/include/GL/freeglut_std.h
+ C:/Program Files/Common Files/freeglut/include/GL/glut.h
+ F:/summer_project/HuaRongDao/Button.h
  F:/summer_project/HuaRongDao/Game.cpp
  F:/summer_project/HuaRongDao/Game.h
+ F:/summer_project/HuaRongDao/Quad.h
+ F:/summer_project/HuaRongDao/graphic.h
 CMakeFiles/HuaRongDao.dir/Quad.cpp.obj
  C:/Program Files/Common Files/freeglut/include/GL/freeglut_std.h
  C:/Program Files/Common Files/freeglut/include/GL/glut.h
@@ -21,6 +26,8 @@ CMakeFiles/HuaRongDao.dir/Quad.cpp.obj
 CMakeFiles/HuaRongDao.dir/graphic.cpp.obj
  C:/Program Files/Common Files/freeglut/include/GL/freeglut_std.h
  C:/Program Files/Common Files/freeglut/include/GL/glut.h
+ F:/summer_project/HuaRongDao/Button.h
  F:/summer_project/HuaRongDao/Game.h
+ F:/summer_project/HuaRongDao/Quad.h
  F:/summer_project/HuaRongDao/graphic.cpp
  F:/summer_project/HuaRongDao/graphic.h
