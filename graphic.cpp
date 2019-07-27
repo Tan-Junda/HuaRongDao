@@ -21,8 +21,10 @@ int index2=0;
 int t = 0;
 enum screen {
     Start,
+    Play,
     End
 };
+
 screen window;
 void init() {
     window = Start;
@@ -41,6 +43,7 @@ void init() {
 }
 
 void display_game(){
+    //test for detecting end of the game.
 //    if(game.get_over_position().x == game.get_blocks()[1].getQuad().getLeftX() &&
 //        game.get_over_position().y == game.get_blocks()[1].getQuad().getCenterY() && times ==1){
 //        window = End;
@@ -48,6 +51,15 @@ void display_game(){
 //        times++;
 //    }
     if (window == Start) {
+        game.draw_board();
+        game.intro_background();
+
+    }
+    if (window == End ) {
+        game.draw_end_screen();
+        game.gameover_background();
+    }
+    if (window == Play ) {
         if(times == 0) {
             game = Game(width, height);
             times++;
@@ -65,7 +77,7 @@ void initGL() {
 }
 
 /* Handler for window-repaint event. Call back when the windwo first appears and whenever
- * the windwo needs to be re-painted.*/
+ * the window needs to be re-painted.*/
 void display(){
     // tell OpenGl to use the whole window for drawing
     glViewport(0,0,width,height);
@@ -95,6 +107,12 @@ void kbd(unsigned char key, int x, int y) {
     }
     if (key == 'r') {
         new_game = true;
+    }
+    if (key == 'e') {
+        window = End;
+    }
+    if (key == 32) {
+        window = Play;
     }
 
     glutPostRedisplay();

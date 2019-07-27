@@ -43,7 +43,9 @@ public:
     void draw_end_screen();
     Quad get_board();
     point get_over_position();
-
+// global prototype for background of the game
+    void intro_background();
+    void gameover_background();
 
 };
 
