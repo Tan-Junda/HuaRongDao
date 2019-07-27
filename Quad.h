@@ -49,7 +49,7 @@ public:
     void setColor(color fill);
     void move(int deltaX, int deltaY);
     void resize(unsigned int width, unsigned int height);
-
+    bool isOverlapping(double north, double south, double west, double east);
     void draw() const;
 };
 

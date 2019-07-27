@@ -6,12 +6,16 @@
 
 
 #include <string>
+Button::Button() {
+
+}
 Button::Button(Quad box, std::string label) {
+    isSelected = false;
     this->box = box;
     this->label = label;
     originalFill = box.getFill();
-    hoverFill = {box.getRed()+0.5, box.getGreen()+0.5, box.getBlue()+0.5};
-    pressFill = {box.getRed()-0.5, box.getGreen()-0.5, box.getBlue()-0.5};
+    hoverFill = {box.getRed()+0.2, box.getGreen()+0.6, box.getBlue()+0.2};
+    pressFill = {box.getRed()-0.3, box.getGreen()-0.1, box.getBlue()-0.1};
 }
 
 void Button::draw() {
@@ -51,23 +55,29 @@ void Button::release() {
 /* Move the position of button when press arrows*/
 void Button::moves(std::string direction) {
     if(direction == "up")
-        box.move(0,-10);
+        box.move(0,-75);
     if(direction == "down")
-        box.move(0,10);
+        box.move(0,75);
     if(direction == "left")
-        box.move(-10,0);
+        box.move(-75,0);
     if(direction == "right")
-        box.move(10,0);
+        box.move(75,0);
 }
 /* Execute whatever the Button is supposed to do */
 void Button::click(function<void()> callback) {
     callback();
 }
 
-Button::Button() {
 
+void Button::set_selected(bool selected) {
+    isSelected =  selected;
 }
 
-point Button::getCenter() {
-    return box.getCenter();
+bool Button::get_selected() {
+    return isSelected;
 }
+
+Quad Button::getQuad() {
+    return box;
+}
+

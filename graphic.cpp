@@ -1,7 +1,6 @@
 //
 // Created by zuozu on 2019/5/20.
 //
-
 #include "graphic.h"
 #include "Game.h"
 #include <iostream>
@@ -10,7 +9,24 @@ using namespace std;
 
 GLdouble width, height;
 int wd;
+Game game;
+int times=0;
+bool click=false;
+int last_x;
+int last_y;
+int index;
+int changes = 0;
+bool new_game = false;
+int index2=0;
+int t = 0;
+enum screen {
+    Start,
+    End
+};
+screen window;
 void init() {
+    window = Start;
+    click = false;
     width = 1265;
     height = 700;
     glClearColor(0.5f,0.5f,0.5f,0.0f);
@@ -24,6 +40,24 @@ void init() {
     glFlush();
 }
 
+void display_game(){
+//    if(game.get_over_position().x == game.get_blocks()[1].getQuad().getLeftX() &&
+//        game.get_over_position().y == game.get_blocks()[1].getQuad().getCenterY() && times ==1){
+//        window = End;
+//        game.draw_end_screen();
+//        times++;
+//    }
+    if (window == Start) {
+        if(times == 0) {
+            game = Game(width, height);
+            times++;
+        }
+        game.draw_board();
+        game.draw_buttons();
+    }
+
+
+}
 // Initialize OpenGL Graphics
 void initGL() {
     // Set "clearing" or background color
@@ -48,9 +82,9 @@ void display(){
     /*
      *  Draw here
      */
-    Game game = Game(width,height);
-    game.draw_board();
-    game.draw_buttons();
+
+    display_game();
+
     glFlush(); // Render now
 }
 
@@ -59,6 +93,10 @@ void kbd(unsigned char key, int x, int y) {
         glutDestroyWindow(wd);
         exit(0);
     }
+    if (key == 'r') {
+        new_game = true;
+    }
+
     glutPostRedisplay();
 }
 void kbdS(int key, int x, int y){
@@ -79,13 +117,22 @@ void cursor(int x, int y){
 }
 
 void mouse(int button, int state, int x, int y) {
-    if(state == 0) {
-
-    }
-    if(state ==1){
-
-    }
+    click = true;
+    last_x = x;
+    last_y = y;
     glutPostRedisplay();
+    index = 0;
+    for (Button &piece : game.get_blocks()) {
+        if (state == 0) {
+            if (piece.isOverlapping(x, y)) {
+                game.pressDown(index);
+            }
+        }
+        if (state == 1){
+            game.release(index);
+        }
+        index++;
+    }
 }
 
 void timer(int dummy) {
@@ -93,12 +140,125 @@ void timer(int dummy) {
     glutTimerFunc(50, timer, dummy);
 }
 
+void move_button(int x, int y) {
+    if(click) {
+        index2 = 0;
+        for (Button &piece : game.get_blocks()) {
+            if (piece.isOverlapping(last_x, last_y)) {
+                double delta_x, delta_y;
+                delta_x = x - last_x;
+                delta_y = y - last_y;
+                if (delta_x < 0)
+                    delta_x = -delta_x;
+
+                if (delta_y < 0)
+                    delta_y = -delta_y;
+
+                if (delta_x == delta_y) {
+                    changes = -1;
+                }
+                if (delta_y > delta_x && last_y < y) { //down
+                    if (game.get_board().getBottomY() -75 > game.get_blocks()[index2].getQuad().getBottomY()) {
+                        bool move = true;
+                        for (int i=0; i<10; i++) {
+                            if (game.get_blocks()[index2].getQuad().getBottomY() == game.get_blocks()[i].getQuad().getTopY() -5 &&
+                            ((game.get_blocks()[i].getQuad().getLeftX() < game.get_blocks()[index2].getQuad().getCenterX() &&
+                            game.get_blocks()[index2].getQuad().getCenterX() <  game.get_blocks()[i].getQuad().getRightX()) ||
+                            (game.get_blocks()[index2].getQuad().getLeftX() == game.get_blocks()[i].getQuad().getLeftX() &&
+                            game.get_blocks()[index2].getQuad().getRightX() > game.get_blocks()[i].getQuad().getRightX()) ||
+                            (game.get_blocks()[index2].getQuad().getRightX() == game.get_blocks()[i].getQuad().getRightX() &&
+                            game.get_blocks()[index2].getQuad().getLeftX() < game.get_blocks()[i].getQuad().getLeftX()) )){
+                                move = false;
+                            }
+                        }
+                        if(move) {
+                            game.move_buttons_down(index2);
+                            changes = 1;
+                        }
+                    }
+                } else if (delta_y > delta_x && last_y > y) { //up
+                    if (game.get_board().getTopY() + 75 < game.get_blocks()[index2].getQuad().getTopY()) {
+                        bool move = true;
+                        for (int i=0; i<10; i++) {
+                            if ( game.get_blocks()[index2].getQuad().getTopY() == game.get_blocks()[i].getQuad().getBottomY() + 5 &&
+                            ((game.get_blocks()[i].getQuad().getLeftX() < game.get_blocks()[index2].getQuad().getCenterX() &&
+                            game.get_blocks()[index2].getQuad().getCenterX() < game.get_blocks()[i].getQuad().getRightX()) ||
+                            (game.get_blocks()[index2].getQuad().getLeftX() == game.get_blocks()[i].getQuad().getLeftX() &&
+                             game.get_blocks()[index2].getQuad().getRightX() > game.get_blocks()[i].getQuad().getRightX()) ||
+                            (game.get_blocks()[index2].getQuad().getRightX() == game.get_blocks()[i].getQuad().getRightX() &&
+                             game.get_blocks()[index2].getQuad().getLeftX() < game.get_blocks()[i].getQuad().getLeftX()) )) {
+                                move = false;
+                            }
+                        }
+                        if (move) {
+                            game.move_buttons_up(index2);
+                            changes = 2;
+                        }
+                    }
+                } else if (delta_x > delta_y && last_x < x) { //right
+                    if (game.get_board().getRightX() -75 > game.get_blocks()[index2].getQuad().getRightX()) {
+                        bool move = true;
+                        for (int i=0; i<10; i++) {
+                            if ( game.get_blocks()[index2].getQuad().getRightX() == game.get_blocks()[i].getQuad().getLeftX() - 5 &&
+                           ((game.get_blocks()[i].getQuad().getTopY() < game.get_blocks()[index2].getQuad().getCenterY() &&
+                            game.get_blocks()[index2].getQuad().getCenterY() < game.get_blocks()[i].getQuad().getBottomY()) ||
+                            (game.get_blocks()[index2].getQuad().getTopY() == game.get_blocks()[i].getQuad().getTopY() &&
+                             game.get_blocks()[index2].getQuad().getBottomY() > game.get_blocks()[i].getQuad().getBottomY()) ||
+                            (game.get_blocks()[index2].getQuad().getBottomY() == game.get_blocks()[i].getQuad().getBottomY() &&
+                             game.get_blocks()[index2].getQuad().getTopY() < game.get_blocks()[i].getQuad().getTopY()) ||
+                           (game.get_blocks()[index2].getQuad().getBottomY() + 2.5 == game.get_blocks()[i].getQuad().getCenterY() &&
+                           game.get_blocks()[index2].getQuad().getBottomY() < game.get_blocks()[i].getQuad().getBottomY() ))) {
+                                move = false;
+                            }
+                        }
+                        if (move) {
+                            game.move_buttons_right(index2);
+                            changes = 3;
+                        }
+                    }
+                } else if (delta_x > delta_y && last_x > x) { //left
+                    if (game.get_board().getLeftX() + 75 < game.get_blocks()[index2].getQuad().getLeftX()) {
+                        bool move = true;
+
+                        for (int i=0; i<10; i++) {
+                            if ( game.get_blocks()[index2].getQuad().getLeftX() == game.get_blocks()[i].getQuad().getRightX() + 5 &&
+                           ((game.get_blocks()[i].getQuad().getTopY() < game.get_blocks()[index2].getQuad().getCenterY() &&
+                            game.get_blocks()[index2].getQuad().getCenterY() < game.get_blocks()[i].getQuad().getBottomY()) ||
+                           (game.get_blocks()[index2].getQuad().getTopY() == game.get_blocks()[i].getQuad().getTopY() &&
+                            game.get_blocks()[index2].getQuad().getBottomY() > game.get_blocks()[i].getQuad().getBottomY()) ||
+                           (game.get_blocks()[index2].getQuad().getBottomY() == game.get_blocks()[i].getQuad().getBottomY() &&
+                            game.get_blocks()[index2].getQuad().getTopY() < game.get_blocks()[i].getQuad().getTopY()) ||
+                           (game.get_blocks()[index2].getQuad().getTopY() < game.get_blocks()[i].getQuad().getBottomY() &&
+                            game.get_blocks()[index2].getQuad().getTopY() - 2.5 == game.get_blocks()[i].getQuad().getCenterY()) ||
+                           (game.get_blocks()[index2].getQuad().getCenterY() + 2.5 == game.get_blocks()[i].getQuad().getTopY() &&
+                           game.get_blocks()[index2].getQuad().getBottomY() > game.get_blocks()[i].getQuad().getTopY()) )) {
+                                move = false;
+                            }
+                        }
+                        if(move){
+                            game.move_buttons_left(index2);
+                            changes = 4;
+                        }
+                    }
+                }
+                click = false;
+            }
+            index2++;
+        }
+    }
+}
+
+void motion(int x, int y){
+    move_button(x, y);
+    glutPostRedisplay();
+}
 /* Main function: GLUT runs as a consolr application starting at main() */
 int main(int argc, char** argv){
     init();
     glutInit(&argc, argv);
     glutInitWindowSize((int)width, (int)height);
     glutInitWindowPosition(0,0); //upper-left corner
+
 
     /* create window and store the handle to it*/
     wd = glutCreateWindow("HuaRongDao");  /* title */
@@ -130,8 +290,10 @@ int main(int argc, char** argv){
     // handles timer
     glutTimerFunc(0, timer, 0);
 
+    glutMotionFunc(motion);
     // Enter the event-processing loop
     glutMainLoop();
+
     return 0;
 }
 

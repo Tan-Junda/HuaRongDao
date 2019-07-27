@@ -18,6 +18,7 @@ private:
     Quad box;
     std::string label;
     color originalFill, hoverFill, pressFill;
+    bool isSelected;
 
 public:
     Button();
@@ -26,7 +27,6 @@ public:
     /* Uses OpenGL to draw the box with the label on top */
     virtual void draw();
 
-    point getCenter();
 
     /* Returns true if the coordinate is inside the box */
     bool isOverlapping(int x, int y) const;
@@ -48,6 +48,11 @@ public:
 
     /* Execute whatever the Button is supposed to do */
     virtual void click(std::function<void()> callback);
+
+    void set_selected(bool selected);
+    bool get_selected();
+
+    Quad getQuad();
 };
 
 

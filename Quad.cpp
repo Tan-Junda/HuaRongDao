@@ -106,3 +106,16 @@ void Quad::draw() const {
 
     glEnd();
 }
+
+bool Quad::isOverlapping(double north, double south, double west, double east) {
+    if (east >= getRightX())
+        return false;
+    if (west <= getLeftX() )
+        return false;
+    if (south >= getBottomY())
+        return false;
+    if (north <= getTopY())
+        return false;
+    return true;
+}
+
