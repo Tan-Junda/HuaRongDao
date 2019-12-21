@@ -31,15 +31,6 @@ void init() {
     click = false;
     width = 1265;
     height = 700;
-    glClearColor(0.5f,0.5f,0.5f,0.0f);
-    glColor3f(0.9,0.5,0.4);
-    glBegin(GL_QUADS);
-    glVertex2i(20,20);
-    glVertex2i(20,50);
-    glVertex2i(100,50);
-    glVertex2i(100,20);
-    glEnd();
-    glFlush();
 }
 
 void display_game(){
@@ -51,24 +42,23 @@ void display_game(){
 //        times++;
 //    }
     if (window == Start) {
-        game.draw_board();
-        game.intro_background();
-
-    }
-    if (window == End ) {
-        game.draw_end_screen();
-        game.gameover_background();
-    }
-    if (window == Play ) {
-        if(times == 0) {
+        if(times == 0 || new_game) {
             game = Game(width, height);
             times++;
         }
         game.draw_board();
-        game.draw_buttons();
+        game.intro_background();
     }
 
+    if (window == End ) {
+        game.draw_end_screen();
+        game.gameover_background();
+    }
 
+    if (window == Play ) {
+        game.draw_board();
+        game.draw_buttons();
+    }
 }
 // Initialize OpenGL Graphics
 void initGL() {
@@ -106,6 +96,7 @@ void kbd(unsigned char key, int x, int y) {
         exit(0);
     }
     if (key == 'r') {
+        window = Start;
         new_game = true;
     }
     if (key == 'e') {

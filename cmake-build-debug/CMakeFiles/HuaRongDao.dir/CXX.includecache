@@ -6,59 +6,35 @@
 
 #IncludeRegexTransform: 
 
-C:/Program Files/Common Files/freeglut/include/GL/freeglut_std.h
-windows.h
--
-EGL/egl.h
--
-GLES/gl.h
--
-GLES2/gl2.h
--
-OpenGL/gl.h
--
-OpenGL/glu.h
--
-GL/gl.h
--
-GL/glu.h
--
-stdlib.h
--
-
-C:/Program Files/Common Files/freeglut/include/GL/glut.h
-freeglut_std.h
-C:/Program Files/Common Files/freeglut/include/GL/freeglut_std.h
-
-F:/summer_project/HuaRongDao/Button.h
+/home/youyou/文档/code/Clion/HuaRongDao/Button.h
 Quad.h
-F:/summer_project/HuaRongDao/Quad.h
+/home/youyou/文档/code/Clion/HuaRongDao/Quad.h
 graphic.h
-F:/summer_project/HuaRongDao/graphic.h
+/home/youyou/文档/code/Clion/HuaRongDao/graphic.h
 string
 -
 functional
 -
 
-F:/summer_project/HuaRongDao/Game.h
+/home/youyou/文档/code/Clion/HuaRongDao/Game.h
 vector
 -
 Button.h
-F:/summer_project/HuaRongDao/Button.h
+/home/youyou/文档/code/Clion/HuaRongDao/Button.h
 
-F:/summer_project/HuaRongDao/Quad.h
+/home/youyou/文档/code/Clion/HuaRongDao/Quad.h
 
-F:/summer_project/HuaRongDao/graphic.cpp
+/home/youyou/文档/code/Clion/HuaRongDao/graphic.cpp
 graphic.h
-F:/summer_project/HuaRongDao/graphic.h
+/home/youyou/文档/code/Clion/HuaRongDao/graphic.h
 Game.h
-F:/summer_project/HuaRongDao/Game.h
+/home/youyou/文档/code/Clion/HuaRongDao/Game.h
 iostream
 -
 vector
 -
 
-F:/summer_project/HuaRongDao/graphic.h
+/home/youyou/文档/code/Clion/HuaRongDao/graphic.h
 stdlib.h
 -
 windows.h

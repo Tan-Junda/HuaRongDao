@@ -103,67 +103,6 @@ void Game::draw_end_screen() {
 }
 
 void Game::intro_background() {
-    glBegin(GL_QUADS);
-    glColor3f((double)130/255, (double)202/255, 1);
-    glVertex2i(0, 0);
-    glVertex2i(500, 0);
-
-    glColor3f((double)252/255, (double)62/255, (double)43/255);
-    glVertex2i(500, 150);
-    glVertex2i(0, 150);
-    glVertex2i(0, 150);
-    glVertex2i(500, 150);
-
-    glColor3f(1, (double)87/255, (double)51/255);
-    glVertex2i(500, 300);
-    glVertex2i(0, 300);
-    glVertex2i(0, 300);
-    glVertex2i(500, 300);
-
-    glColor3f(1, (double)195/255, 0);
-    glVertex2i(500, 500);
-    glVertex2i(0, 500);
-
-    glEnd();
-
-    glBegin(GL_TRIANGLE_FAN);
-    glColor3f(1, 1, 1);
-    glVertex2i(250, 500);
-    glVertex2i(0, 500);
-    glColor3f(0, (double)128/255, 0);
-    glVertex2i(0, 350);
-    glVertex2i(50, 375);
-    glVertex2i(100, 350);
-    glVertex2i(150, 360);
-    glVertex2i(200, 365);
-    glVertex2i(250, 375);
-    glVertex2i(300, 340);
-    glVertex2i(350, 370);
-    glVertex2i(400, 360);
-    glVertex2i(450, 370);
-    glVertex2i(500, 340);
-    glColor3f(1, 1, 1);
-    glVertex2i(500, 500);
-    glEnd();
-
-    glBegin(GL_TRIANGLE_FAN);
-    glColor3f(1, 1, 1);
-    glVertex2i(250, 500);
-    glVertex2i(0, 500);
-    glColor3f(0, (double)128/255, 0);
-    glVertex2i(0, 415);
-    glVertex2i(100, 400);
-    glVertex2i(150, 410);
-    glVertex2i(200, 405);
-    glVertex2i(250, 450);
-    glVertex2i(300, 420);
-    glVertex2i(350, 430);
-    glVertex2i(400, 410);
-    glVertex2i(450, 420);
-    glVertex2i(500, 400);
-    glColor3f(1, 1, 1);
-    glVertex2i(500, 500);
-    glEnd();
 }
 
 void Game::gameover_background() {
@@ -172,8 +111,5 @@ void Game::gameover_background() {
     glColor3f((double)17/255, (double)17/255, (double)91/255);
     glVertex2i(0, 0);
     glVertex2i(500, 0);
-    glColor3f((double)75/255, (double)83/255, (double)154/255);
-    glVertex2i(500, 500);
-    glVertex2i(0, 500);
     glEnd();
 }
