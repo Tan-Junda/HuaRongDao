@@ -37,9 +37,10 @@ Game::Game(GLdouble x, GLdouble y) {
     bing4 = Button(Quad({0.5, 0.5, 0.2},{unit*3.5+margin_x, 4.5*unit+margin_y},solider_length,solider_length),"9");
     blocks={zhang_fei,cao_cao, zhao_yun,ma_chao,guan_yu,huang_zhong,bing1,bing2,bing3,bing4};
     empty1 = Quad({0.8,0.7,0.4}, {2*unit+margin_x, 5*unit+margin_y}, escape_width, escape_height);
-    over_position.x = 2*unit+margin_x - solider_length - 2.5;
+    over_position.x = 2*unit+margin_x;
     over_position.y = 4*unit+margin_y;
-    cout << over_position.x << " " <<over_position.y<<endl;
+//    cout << over_position.x << " " <<over_position.y<<endl;
+    // 560 462
 }
 
 void Game::draw_board() {
@@ -103,6 +104,7 @@ void Game::draw_end_screen() {
 }
 
 void Game::intro_background() {
+
 }
 
 void Game::gameover_background() {
@@ -113,3 +115,4 @@ void Game::gameover_background() {
     glVertex2i(500, 0);
     glEnd();
 }
+

@@ -34,13 +34,7 @@ void init() {
 }
 
 void display_game(){
-    //test for detecting end of the game.
-//    if(game.get_over_position().x == game.get_blocks()[1].getQuad().getLeftX() &&
-//        game.get_over_position().y == game.get_blocks()[1].getQuad().getCenterY() && times ==1){
-//        window = End;
-//        game.draw_end_screen();
-//        times++;
-//    }
+
     if (window == Start) {
         if(times == 0 || new_game) {
             game = Game(width, height);
@@ -58,7 +52,13 @@ void display_game(){
     if (window == Play ) {
         game.draw_board();
         game.draw_buttons();
+        //test for detecting end of the game.
+        if(game.get_over_position().x == game.get_blocks()[1].getQuad().getCenterX() &&
+           game.get_over_position().y == game.get_blocks()[1].getQuad().getCenterY()){
+            window = End;
+        }
     }
+
 }
 // Initialize OpenGL Graphics
 void initGL() {
@@ -152,6 +152,7 @@ void timer(int dummy) {
 void move_button(int x, int y) {
     if(click) {
         index2 = 0;
+        changes = 0;
         for (Button &piece : game.get_blocks()) {
             if (piece.isOverlapping(last_x, last_y)) {
                 double delta_x, delta_y;

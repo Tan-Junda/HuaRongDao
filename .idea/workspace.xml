@@ -12,60 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bac27f0e-09d7-4193-9af7-a471f73bf343" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CMakeRCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CompilerIdC/a.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.0/CompilerIdCXX/a.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/Button.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/Game.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/Quad.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/graphic.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/includes_CXX.rsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/linklibs.rsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/objects.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/objects1.rsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.cxx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/includes_CXX.rsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/linklibs.rsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/objects1.rsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/graphics.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/HuaRongDao.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/HuaRongDao.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/graphic.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/graphic.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -179,7 +128,14 @@
       <workItem from="1559727621396" duration="104000" />
       <workItem from="1560759193887" duration="189000" />
       <workItem from="1564200175098" duration="1362000" />
-      <workItem from="1576885984714" duration="1058000" />
+      <workItem from="1576885984714" duration="1480000" />
+      <workItem from="1577034693263" duration="87000" />
+      <workItem from="1577035016454" duration="213000" />
+      <workItem from="1577036276155" duration="489000" />
+      <workItem from="1577036901596" duration="203000" />
+      <workItem from="1577051203770" duration="696000" />
+      <workItem from="1577482855937" duration="4789000" />
+      <workItem from="1577502309115" duration="24000" />
     </task>
     <task id="LOCAL-00001" summary="board completed">
       <created>1558417463500</created>
@@ -195,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558417488583</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="intro board clear &amp; new_game setup">
+      <created>1576887107651</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576887107651</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,24 +166,42 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="board completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="board completed" />
+    <MESSAGE value="intro board clear &amp; new_game setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="intro board clear &amp; new_game setup" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1346" height="135" key="GridCell.Tab.0.bottom" timestamp="1576887041655">
+    <state x="521" y="143" width="867" height="820" key="CommitChangelistDialog2" timestamp="1576887107381">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1346" height="135" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1576887041655" />
-    <state width="1346" height="135" key="GridCell.Tab.0.center" timestamp="1576887041655">
+    <state x="521" y="143" width="867" height="820" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1576887107381" />
+    <state width="1842" height="130" key="GridCell.Tab.0.bottom" timestamp="1577502331831">
+      <screen x="0" y="41" width="1920" height="1039" />
+    </state>
+    <state width="1866" height="145" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1577034780132" />
+    <state width="1842" height="130" key="GridCell.Tab.0.bottom/0.41.1920.1039@0.41.1920.1039" timestamp="1577502331831" />
+    <state width="1842" height="130" key="GridCell.Tab.0.center" timestamp="1577502331830">
+      <screen x="0" y="41" width="1920" height="1039" />
+    </state>
+    <state width="1866" height="145" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1577034780131" />
+    <state width="1842" height="130" key="GridCell.Tab.0.center/0.41.1920.1039@0.41.1920.1039" timestamp="1577502331830" />
+    <state width="1842" height="130" key="GridCell.Tab.0.left" timestamp="1577502331829">
+      <screen x="0" y="41" width="1920" height="1039" />
+    </state>
+    <state width="1866" height="145" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1577034780131" />
+    <state width="1842" height="130" key="GridCell.Tab.0.left/0.41.1920.1039@0.41.1920.1039" timestamp="1577502331829" />
+    <state width="1842" height="130" key="GridCell.Tab.0.right" timestamp="1577502331830">
+      <screen x="0" y="41" width="1920" height="1039" />
+    </state>
+    <state width="1866" height="145" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1577034780132" />
+    <state width="1842" height="130" key="GridCell.Tab.0.right/0.41.1920.1039@0.41.1920.1039" timestamp="1577502331830" />
+    <state x="555" y="287" width="800" height="531" key="Vcs.Push.Dialog.v2" timestamp="1576887111041">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1346" height="135" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1576887041655" />
-    <state width="1346" height="135" key="GridCell.Tab.0.left" timestamp="1576887041655">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state x="555" y="287" width="800" height="531" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1576887111041" />
+    <state x="614" y="389" key="com.intellij.ide.util.TipDialog" timestamp="1577547439568">
+      <screen x="0" y="41" width="1920" height="1039" />
     </state>
-    <state width="1346" height="135" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1576887041655" />
-    <state width="1346" height="135" key="GridCell.Tab.0.right" timestamp="1576887041655">
-      <screen x="0" y="27" width="1920" height="1053" />
-    </state>
-    <state width="1346" height="135" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1576887041655" />
+    <state x="614" y="380" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1577051204610" />
+    <state x="614" y="389" key="com.intellij.ide.util.TipDialog/0.41.1920.1039@0.41.1920.1039" timestamp="1577547439568" />
   </component>
 </project>
