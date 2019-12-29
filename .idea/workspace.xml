@@ -13,7 +13,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bac27f0e-09d7-4193-9af7-a471f73bf343" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/graphic.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/graphic.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -145,7 +144,9 @@
       <workItem from="1577583928604" duration="227000" />
       <workItem from="1577584274551" duration="850000" />
       <workItem from="1577585242880" duration="699000" />
-      <workItem from="1577636030257" duration="1879000" />
+      <workItem from="1577636030257" duration="1905000" />
+      <workItem from="1577648972739" duration="208000" />
+      <workItem from="1577649342944" duration="639000" />
     </task>
     <task id="LOCAL-00001" summary="board completed">
       <created>1558417463500</created>
@@ -182,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577636141609</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="move right fixed">
+      <created>1577637927623</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1577637927623</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +201,8 @@
     <MESSAGE value="intro board clear &amp; new_game setup" />
     <MESSAGE value="game over is jumping into end screen" />
     <MESSAGE value="strings added into start &amp; end windows" />
-    <option name="LAST_COMMIT_MESSAGE" value="strings added into start &amp; end windows" />
+    <MESSAGE value="move right fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="move right fixed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="485" y="151" width="940" height="824" key="#SOIL" timestamp="1577585887004">
@@ -212,10 +221,11 @@
       <screen x="0" y="41" width="1920" height="1039" />
     </state>
     <state x="1042" y="187" width="786" height="752" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.41.1920.1039@0.41.1920.1039" timestamp="1577585903108" />
-    <state x="400" y="152" width="1192" height="810" key="CommitChangelistDialog2" timestamp="1577636141311">
-      <screen x="0" y="41" width="1920" height="1039" />
+    <state x="400" y="146" width="1192" height="810" key="CommitChangelistDialog2" timestamp="1577637927482">
+      <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="521" y="143" width="867" height="820" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1576887107381" />
+    <state x="400" y="146" key="CommitChangelistDialog2/0.34.1920.1046@0.34.1920.1046" timestamp="1577637927482" />
     <state x="400" y="152" width="1192" height="810" key="CommitChangelistDialog2/0.41.1920.1039@0.41.1920.1039" timestamp="1577636141311" />
     <state x="568" y="201" width="773" height="771" key="EnvironmentVariablesDialog" timestamp="1577585490796">
       <screen x="0" y="41" width="1920" height="1039" />
@@ -225,39 +235,41 @@
       <screen x="0" y="41" width="1920" height="1039" />
     </state>
     <state x="1117" y="203" width="636" height="719" key="FileChooserDialogImpl/0.41.1920.1039@0.41.1920.1039" timestamp="1577585881988" />
-    <state width="1842" height="3" key="GridCell.Tab.0.bottom" timestamp="1577637728246">
+    <state width="1856" height="11" key="GridCell.Tab.0.bottom" timestamp="1577649982399">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state width="1866" height="145" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1577034780132" />
-    <state width="1842" height="3" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1577637728246" />
+    <state width="1856" height="11" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1577649982399" />
     <state width="1842" height="181" key="GridCell.Tab.0.bottom/0.41.1920.1039@0.41.1920.1039" timestamp="1577636220351" />
-    <state width="1842" height="3" key="GridCell.Tab.0.center" timestamp="1577637728246">
+    <state width="1856" height="11" key="GridCell.Tab.0.center" timestamp="1577649982398">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state width="1866" height="145" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1577034780131" />
-    <state width="1842" height="3" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1577637728246" />
+    <state width="1856" height="11" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1577649982398" />
     <state width="1842" height="181" key="GridCell.Tab.0.center/0.41.1920.1039@0.41.1920.1039" timestamp="1577636220350" />
-    <state width="1842" height="3" key="GridCell.Tab.0.left" timestamp="1577637728245">
+    <state width="1856" height="11" key="GridCell.Tab.0.left" timestamp="1577649982398">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state width="1866" height="145" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1577034780131" />
-    <state width="1842" height="3" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1577637728245" />
+    <state width="1856" height="11" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1577649982398" />
     <state width="1842" height="181" key="GridCell.Tab.0.left/0.41.1920.1039@0.41.1920.1039" timestamp="1577636220350" />
-    <state width="1842" height="3" key="GridCell.Tab.0.right" timestamp="1577637728246">
+    <state width="1856" height="11" key="GridCell.Tab.0.right" timestamp="1577649982399">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state width="1866" height="145" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1577034780132" />
-    <state width="1842" height="3" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1577637728246" />
+    <state width="1856" height="11" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1577649982399" />
     <state width="1842" height="181" key="GridCell.Tab.0.right/0.41.1920.1039@0.41.1920.1039" timestamp="1577636220351" />
-    <state x="555" y="298" width="865" height="524" key="Vcs.Push.Dialog.v2" timestamp="1577636145485">
-      <screen x="0" y="41" width="1920" height="1039" />
+    <state x="555" y="293" width="865" height="524" key="Vcs.Push.Dialog.v2" timestamp="1577637929108">
+      <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="555" y="287" width="800" height="531" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1576887111041" />
+    <state x="555" y="293" key="Vcs.Push.Dialog.v2/0.34.1920.1046@0.34.1920.1046" timestamp="1577637929108" />
     <state x="555" y="298" width="865" height="524" key="Vcs.Push.Dialog.v2/0.41.1920.1039@0.41.1920.1039" timestamp="1577636145485" />
-    <state x="614" y="389" key="com.intellij.ide.util.TipDialog" timestamp="1577636030617">
-      <screen x="0" y="41" width="1920" height="1039" />
+    <state x="614" y="384" key="com.intellij.ide.util.TipDialog" timestamp="1577648984299">
+      <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="614" y="380" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1577051204610" />
+    <state x="614" y="384" key="com.intellij.ide.util.TipDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1577648984299" />
     <state x="614" y="389" key="com.intellij.ide.util.TipDialog/0.41.1920.1039@0.41.1920.1039" timestamp="1577636030617" />
     <state x="453" y="27" width="1009" height="1049" key="search.everywhere.popup" timestamp="1577636382660">
       <screen x="0" y="27" width="1920" height="1053" />

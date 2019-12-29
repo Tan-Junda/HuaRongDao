@@ -151,6 +151,34 @@ void timer(int dummy) {
     glutTimerFunc(50, timer, dummy);
 }
 
+void play_sound1(){
+#ifdef  _WIN32
+    Beep(n1, D);
+#endif
+
+#ifdef __APPLE__
+    system("afplay /System/Library/Sounds/pop.aiff");
+#endif
+
+#ifdef __UNIX__
+    cout << "Haha1\n";
+#endif
+}
+
+void play_sound2(){
+#ifdef  _WIN32
+    Beep(n2, D2);
+#endif
+
+#ifdef __APPLE__
+    system("afplay /System/Library/Sounds/glass.aiff");
+#endif
+
+#ifdef __UNIX__
+    cout << "Haha2\n";
+#endif
+}
+
 void move_button(int x, int y) {
     if(click) {
         index2 = 0;
@@ -186,6 +214,7 @@ void move_button(int x, int y) {
                         if(move) {
                             game.move_buttons_down(index2);
                             changes = 1;
+                            click = false;
                         }
                     }
                 } else if (delta_y > delta_x && last_y > y) { //up
@@ -205,6 +234,7 @@ void move_button(int x, int y) {
                         if (move) {
                             game.move_buttons_up(index2);
                             changes = 2;
+                            click = false;
                         }
                     }
                 } else if (delta_x > delta_y && last_x < x) { //right
@@ -236,6 +266,7 @@ void move_button(int x, int y) {
                         if (move) {
                             game.move_buttons_right(index2);
                             changes = 3;
+                            click = false;
                         }
                     }
                 } else if (delta_x > delta_y && last_x > x) { //left
@@ -268,10 +299,11 @@ void move_button(int x, int y) {
                         if(move){
                             game.move_buttons_left(index2);
                             changes = 4;
+                            click = false;
                         }
                     }
                 }
-                click = false;
+//                click = false;
             }
             index2++;
         }
