@@ -16,14 +16,6 @@ string
 functional
 -
 
-/home/youyou/文档/code/Clion/HuaRongDao/Game.cpp
-iostream
--
-cstring
--
-Game.h
-/home/youyou/文档/code/Clion/HuaRongDao/Game.h
-
 /home/youyou/文档/code/Clion/HuaRongDao/Game.h
 vector
 -
@@ -31,6 +23,18 @@ Button.h
 /home/youyou/文档/code/Clion/HuaRongDao/Button.h
 
 /home/youyou/文档/code/Clion/HuaRongDao/Quad.h
+
+/home/youyou/文档/code/Clion/HuaRongDao/graphic.cpp
+graphic.h
+/home/youyou/文档/code/Clion/HuaRongDao/graphic.h
+Game.h
+/home/youyou/文档/code/Clion/HuaRongDao/Game.h
+iostream
+-
+vector
+-
+cstring
+-
 
 /home/youyou/文档/code/Clion/HuaRongDao/graphic.h
 stdlib.h
