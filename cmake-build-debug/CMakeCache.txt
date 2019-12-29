@@ -259,6 +259,9 @@ ProcessorCount_cmd_nproc:FILEPATH=/usr/bin/nproc
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/sbin/sysctl
 
+//Build tests
+SOIL_BUILD_TESTS:BOOL=false
+
 
 ########################
 # INTERNAL cache entries

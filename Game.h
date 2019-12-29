@@ -10,7 +10,8 @@ class Game {
     double center_x = 0;
     double center_y = 0;
     double unit = 75;
-    double cao_length = unit*2-5;
+    double
+    cao_length = unit*2-5;
     double four_general_height = unit*2-5;
     double four_general_width = unit-5;
     double guan_height = unit-5;

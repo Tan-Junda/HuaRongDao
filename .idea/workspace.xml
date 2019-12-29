@@ -13,8 +13,15 @@
   <component name="ChangeListManager">
     <list default="true" id="bac27f0e-09d7-4193-9af7-a471f73bf343" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/graphic.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/graphic.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,13 +61,18 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/120/Lab-Botton" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cmake-build-debug" />
+      <recent name="$PROJECT_DIR$/cmake-build-debug/CMakeFiles" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="F:\summer_project\HuaRongDao\cmake-build-debug" />
     </key>
   </component>
@@ -136,6 +148,11 @@
       <workItem from="1577051203770" duration="696000" />
       <workItem from="1577482855937" duration="4789000" />
       <workItem from="1577502309115" duration="24000" />
+      <workItem from="1577547438918" duration="4414000" />
+      <workItem from="1577583448581" duration="367000" />
+      <workItem from="1577583928604" duration="227000" />
+      <workItem from="1577584274551" duration="850000" />
+      <workItem from="1577585242880" duration="699000" />
     </task>
     <task id="LOCAL-00001" summary="board completed">
       <created>1558417463500</created>
@@ -158,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576887107651</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="game over is jumping into end screen">
+      <created>1577547501194</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1577547501194</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,41 +191,68 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="board completed" />
     <MESSAGE value="intro board clear &amp; new_game setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="intro board clear &amp; new_game setup" />
+    <MESSAGE value="game over is jumping into end screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="game over is jumping into end screen" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="521" y="143" width="867" height="820" key="CommitChangelistDialog2" timestamp="1576887107381">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state x="485" y="151" width="940" height="824" key="#SOIL" timestamp="1577585887004">
+      <screen x="0" y="41" width="1920" height="1039" />
+    </state>
+    <state x="485" y="151" width="940" height="824" key="#SOIL/0.41.1920.1039@0.41.1920.1039" timestamp="1577585887004" />
+    <state x="381" y="227" width="1099" height="781" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577585528412">
+      <screen x="0" y="41" width="1920" height="1039" />
+    </state>
+    <state x="381" y="227" width="1099" height="781" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.41.1920.1039@0.41.1920.1039" timestamp="1577585528412" />
+    <state x="1042" y="187" width="786" height="752" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577585903108">
+      <screen x="0" y="41" width="1920" height="1039" />
+    </state>
+    <state x="1042" y="187" width="786" height="752" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.41.1920.1039@0.41.1920.1039" timestamp="1577585903108" />
+    <state x="400" y="152" width="1192" height="810" key="CommitChangelistDialog2" timestamp="1577547500889">
+      <screen x="0" y="41" width="1920" height="1039" />
     </state>
     <state x="521" y="143" width="867" height="820" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1576887107381" />
-    <state width="1842" height="130" key="GridCell.Tab.0.bottom" timestamp="1577502331831">
+    <state x="400" y="152" width="1192" height="810" key="CommitChangelistDialog2/0.41.1920.1039@0.41.1920.1039" timestamp="1577547500889" />
+    <state x="568" y="201" width="773" height="771" key="EnvironmentVariablesDialog" timestamp="1577585490796">
+      <screen x="0" y="41" width="1920" height="1039" />
+    </state>
+    <state x="568" y="201" width="773" height="771" key="EnvironmentVariablesDialog/0.41.1920.1039@0.41.1920.1039" timestamp="1577585490796" />
+    <state x="1117" y="203" width="636" height="719" key="FileChooserDialogImpl" timestamp="1577585881988">
+      <screen x="0" y="41" width="1920" height="1039" />
+    </state>
+    <state x="1117" y="203" width="636" height="719" key="FileChooserDialogImpl/0.41.1920.1039@0.41.1920.1039" timestamp="1577585881988" />
+    <state width="1842" height="183" key="GridCell.Tab.0.bottom" timestamp="1577585941387">
       <screen x="0" y="41" width="1920" height="1039" />
     </state>
     <state width="1866" height="145" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1577034780132" />
-    <state width="1842" height="130" key="GridCell.Tab.0.bottom/0.41.1920.1039@0.41.1920.1039" timestamp="1577502331831" />
-    <state width="1842" height="130" key="GridCell.Tab.0.center" timestamp="1577502331830">
+    <state width="1842" height="183" key="GridCell.Tab.0.bottom/0.41.1920.1039@0.41.1920.1039" timestamp="1577585941387" />
+    <state width="1842" height="183" key="GridCell.Tab.0.center" timestamp="1577585941387">
       <screen x="0" y="41" width="1920" height="1039" />
     </state>
     <state width="1866" height="145" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1577034780131" />
-    <state width="1842" height="130" key="GridCell.Tab.0.center/0.41.1920.1039@0.41.1920.1039" timestamp="1577502331830" />
-    <state width="1842" height="130" key="GridCell.Tab.0.left" timestamp="1577502331829">
+    <state width="1842" height="183" key="GridCell.Tab.0.center/0.41.1920.1039@0.41.1920.1039" timestamp="1577585941387" />
+    <state width="1842" height="183" key="GridCell.Tab.0.left" timestamp="1577585941386">
       <screen x="0" y="41" width="1920" height="1039" />
     </state>
     <state width="1866" height="145" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1577034780131" />
-    <state width="1842" height="130" key="GridCell.Tab.0.left/0.41.1920.1039@0.41.1920.1039" timestamp="1577502331829" />
-    <state width="1842" height="130" key="GridCell.Tab.0.right" timestamp="1577502331830">
+    <state width="1842" height="183" key="GridCell.Tab.0.left/0.41.1920.1039@0.41.1920.1039" timestamp="1577585941386" />
+    <state width="1842" height="183" key="GridCell.Tab.0.right" timestamp="1577585941387">
       <screen x="0" y="41" width="1920" height="1039" />
     </state>
     <state width="1866" height="145" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1577034780132" />
-    <state width="1842" height="130" key="GridCell.Tab.0.right/0.41.1920.1039@0.41.1920.1039" timestamp="1577502331830" />
-    <state x="555" y="287" width="800" height="531" key="Vcs.Push.Dialog.v2" timestamp="1576887111041">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1842" height="183" key="GridCell.Tab.0.right/0.41.1920.1039@0.41.1920.1039" timestamp="1577585941387" />
+    <state x="555" y="298" width="865" height="524" key="Vcs.Push.Dialog.v2" timestamp="1577547503524">
+      <screen x="0" y="41" width="1920" height="1039" />
     </state>
     <state x="555" y="287" width="800" height="531" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1576887111041" />
-    <state x="614" y="389" key="com.intellij.ide.util.TipDialog" timestamp="1577547439568">
+    <state x="555" y="298" width="865" height="524" key="Vcs.Push.Dialog.v2/0.41.1920.1039@0.41.1920.1039" timestamp="1577547503524" />
+    <state x="614" y="389" key="com.intellij.ide.util.TipDialog" timestamp="1577636030617">
       <screen x="0" y="41" width="1920" height="1039" />
     </state>
     <state x="614" y="380" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1577051204610" />
-    <state x="614" y="389" key="com.intellij.ide.util.TipDialog/0.41.1920.1039@0.41.1920.1039" timestamp="1577547439568" />
+    <state x="614" y="389" key="com.intellij.ide.util.TipDialog/0.41.1920.1039@0.41.1920.1039" timestamp="1577636030617" />
+    <state x="453" y="39" width="1009" height="1470" key="search.everywhere.popup" timestamp="1577551205997">
+      <screen x="0" y="41" width="1920" height="1039" />
+    </state>
+    <state x="453" y="39" width="1009" height="1470" key="search.everywhere.popup/0.41.1920.1039@0.41.1920.1039" timestamp="1577551205997" />
   </component>
 </project>

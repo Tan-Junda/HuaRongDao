@@ -3,6 +3,7 @@
 //
 
 #include <iostream>
+#include <cstring>
 #include "Game.h"
 
 Game::Game(){
@@ -40,7 +41,7 @@ Game::Game(GLdouble x, GLdouble y) {
     over_position.x = 2*unit+margin_x;
     over_position.y = 4*unit+margin_y;
 //    cout << over_position.x << " " <<over_position.y<<endl;
-    // 560 462
+    // 632.5 462
 }
 
 void Game::draw_board() {
@@ -99,20 +100,28 @@ point Game::get_over_position() {
 }
 
 void Game::draw_end_screen() {
-    Quad a = Quad({0.5,0,0.5},{center_x,center_y},400,500);
-    a.draw();
+    board = Quad({0.2,0.2,0.1},{center_x,center_y},unit*4+5,unit*5+5);
+    board.draw();
+    empty1.draw();
 }
 
 void Game::intro_background() {
+    unsigned char string[] = "press space to start";
+    glRasterPos2i(632.5,612);
+    glColor3f(0,0,0);
+    for (int i=0; i<(int)strlen((char *)string); i++) {
+        glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, string[i]);
+    }
 
 }
 
+
 void Game::gameover_background() {
-    glClearColor((double)17/255, (double)17/255, (double)91/255, 1.0f);
-    glBegin(GL_QUADS);
-    glColor3f((double)17/255, (double)17/255, (double)91/255);
-    glVertex2i(0, 0);
-    glVertex2i(500, 0);
-    glEnd();
+    unsigned char string[] = "Game Over, press r to restart the game";
+    glRasterPos2i(632.5,612);
+    glColor3f(0,0,0);
+    for (int i=0; i<(int)strlen((char *)string); i++) {
+        glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, string[i]);
+    }
 }
 

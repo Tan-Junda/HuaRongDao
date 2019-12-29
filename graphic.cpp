@@ -5,6 +5,8 @@
 #include "Game.h"
 #include <iostream>
 #include <vector>
+#include <cstring>
+
 using namespace std;
 
 GLdouble width, height;
@@ -14,7 +16,7 @@ int times=0;
 bool click=false;
 int last_x;
 int last_y;
-int index;
+int index1;
 int changes = 0;
 bool new_game = false;
 int index2=0;
@@ -130,17 +132,17 @@ void mouse(int button, int state, int x, int y) {
     last_x = x;
     last_y = y;
     glutPostRedisplay();
-    index = 0;
+    index1 = 0;
     for (Button &piece : game.get_blocks()) {
         if (state == 0) {
             if (piece.isOverlapping(x, y)) {
-                game.pressDown(index);
+                game.pressDown(index1);
             }
         }
         if (state == 1){
-            game.release(index);
+            game.release(index1);
         }
-        index++;
+        index1++;
     }
 }
 
@@ -262,6 +264,7 @@ void motion(int x, int y){
     move_button(x, y);
     glutPostRedisplay();
 }
+
 /* Main function: GLUT runs as a consolr application starting at main() */
 int main(int argc, char** argv){
     init();
