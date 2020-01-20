@@ -1,10 +1,12 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/HuaRongDao.dir/Button.cpp.o"
-  "CMakeFiles/HuaRongDao.dir/Game.cpp.o"
-  "CMakeFiles/HuaRongDao.dir/Quad.cpp.o"
-  "CMakeFiles/HuaRongDao.dir/graphic.cpp.o"
-  "HuaRongDao"
+  "CMakeFiles/HuaRongDao.dir/Button.cpp.obj"
+  "CMakeFiles/HuaRongDao.dir/Game.cpp.obj"
+  "CMakeFiles/HuaRongDao.dir/Quad.cpp.obj"
+  "CMakeFiles/HuaRongDao.dir/graphic.cpp.obj"
   "HuaRongDao.pdb"
+  "HuaRongDao.exe"
+  "HuaRongDao.exe.manifest"
+  "libHuaRongDao.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

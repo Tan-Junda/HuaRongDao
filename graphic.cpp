@@ -6,7 +6,6 @@
 #include <iostream>
 #include <vector>
 #include <cstring>
-
 using namespace std;
 
 GLdouble width, height;
@@ -27,6 +26,11 @@ enum screen {
     Play,
     End
 };
+bool sound = true;
+
+void play_sound1();
+void play_sound2();
+void play_sound3();
 
 screen window;
 void init() {
@@ -55,11 +59,6 @@ void display_game(){
     if (window == Play ) {
         game.draw_board();
         game.draw_buttons();
-        //test for detecting end of the game.
-        if(game.get_over_position().x == game.get_blocks()[1].getQuad().getCenterX() &&
-           game.get_over_position().y == game.get_blocks()[1].getQuad().getCenterY()){
-            ending_move = true;
-        }
     }
 
 }
@@ -108,6 +107,8 @@ void kbd(unsigned char key, int x, int y) {
     }
     if (key == 32) {
         window = Play;
+        if (sound)
+            play_sound2();
     }
 
     glutPostRedisplay();
@@ -139,6 +140,8 @@ void mouse(int button, int state, int x, int y) {
         if (state == 0) {
             if (piece.isOverlapping(x, y)) {
                 game.pressDown(index1);
+                if (sound)
+                    play_sound1();
             }
         }
         if (state == 1){
@@ -162,7 +165,7 @@ void timer(int dummy) {
 
 void play_sound1(){
 #ifdef  _WIN32
-    Beep(n1, D);
+    Beep(440, 125);
 #endif
 
 #ifdef __APPLE__
@@ -176,7 +179,11 @@ void play_sound1(){
 
 void play_sound2(){
 #ifdef  _WIN32
-    Beep(n2, D2);
+    Beep(261.6, 125);
+    Beep(293.6, 125);
+    Beep(329.6, 125);
+    Beep(392.6, 125);
+    Beep(523.2, 250);
 #endif
 
 #ifdef __APPLE__
@@ -187,6 +194,26 @@ void play_sound2(){
     cout << "Haha2\n";
 #endif
 }
+
+void play_sound3(){
+#ifdef  _WIN32
+    Beep(261.6, 250);
+    Beep(261.6, 125);
+    Beep(293.6, 125);
+    Beep(329.6, 250);
+    Beep(392.6, 250);
+    Beep(523.2, 500);
+#endif
+
+#ifdef __APPLE__
+    system("afplay /System/Library/Sounds/glass.aiff");
+#endif
+
+#ifdef __UNIX__
+    cout << "Haha2\n";
+#endif
+}
+
 
 void move_button(int x, int y) {
     if(click) {
@@ -207,20 +234,27 @@ void move_button(int x, int y) {
                     changes = -1;
                 }
                 if (delta_y > delta_x && last_y < y) { //down
-                    if (game.get_board().getBottomY() -75 > game.get_blocks()[index2].getQuad().getBottomY()) {
+                    if (game.get_board().getBottomY() - 75 > game.get_blocks()[index2].getQuad().getBottomY()) {
                         bool move = true;
-                        for (int i=0; i<10; i++) {
-                            if (game.get_blocks()[index2].getQuad().getBottomY() == game.get_blocks()[i].getQuad().getTopY() -5 &&
-                                ((game.get_blocks()[i].getQuad().getLeftX() < game.get_blocks()[index2].getQuad().getCenterX() &&
-                                  game.get_blocks()[index2].getQuad().getCenterX() <  game.get_blocks()[i].getQuad().getRightX()) ||
-                                 (game.get_blocks()[index2].getQuad().getLeftX() == game.get_blocks()[i].getQuad().getLeftX() &&
-                                  game.get_blocks()[index2].getQuad().getRightX() > game.get_blocks()[i].getQuad().getRightX()) ||
-                                 (game.get_blocks()[index2].getQuad().getRightX() == game.get_blocks()[i].getQuad().getRightX() &&
-                                  game.get_blocks()[index2].getQuad().getLeftX() < game.get_blocks()[i].getQuad().getLeftX()) )){
+                        for (int i = 0; i < 10; i++) {
+                            if (game.get_blocks()[index2].getQuad().getBottomY() ==
+                                game.get_blocks()[i].getQuad().getTopY() - 5 &&
+                                ((game.get_blocks()[i].getQuad().getLeftX() <
+                                  game.get_blocks()[index2].getQuad().getCenterX() &&
+                                  game.get_blocks()[index2].getQuad().getCenterX() <
+                                  game.get_blocks()[i].getQuad().getRightX()) ||
+                                 (game.get_blocks()[index2].getQuad().getLeftX() ==
+                                  game.get_blocks()[i].getQuad().getLeftX() &&
+                                  game.get_blocks()[index2].getQuad().getRightX() >
+                                  game.get_blocks()[i].getQuad().getRightX()) ||
+                                 (game.get_blocks()[index2].getQuad().getRightX() ==
+                                  game.get_blocks()[i].getQuad().getRightX() &&
+                                  game.get_blocks()[index2].getQuad().getLeftX() <
+                                  game.get_blocks()[i].getQuad().getLeftX()))) {
                                 move = false;
                             }
                         }
-                        if(move) {
+                        if (move) {
                             game.move_buttons_down(index2);
                             changes = 1;
                             click = false;
@@ -229,14 +263,21 @@ void move_button(int x, int y) {
                 } else if (delta_y > delta_x && last_y > y) { //up
                     if (game.get_board().getTopY() + 75 < game.get_blocks()[index2].getQuad().getTopY()) {
                         bool move = true;
-                        for (int i=0; i<10; i++) {
-                            if ( game.get_blocks()[index2].getQuad().getTopY() == game.get_blocks()[i].getQuad().getBottomY() + 5 &&
-                                 ((game.get_blocks()[i].getQuad().getLeftX() < game.get_blocks()[index2].getQuad().getCenterX() &&
-                                   game.get_blocks()[index2].getQuad().getCenterX() < game.get_blocks()[i].getQuad().getRightX()) ||
-                                  (game.get_blocks()[index2].getQuad().getLeftX() == game.get_blocks()[i].getQuad().getLeftX() &&
-                                   game.get_blocks()[index2].getQuad().getRightX() > game.get_blocks()[i].getQuad().getRightX()) ||
-                                  (game.get_blocks()[index2].getQuad().getRightX() == game.get_blocks()[i].getQuad().getRightX() &&
-                                   game.get_blocks()[index2].getQuad().getLeftX() < game.get_blocks()[i].getQuad().getLeftX()) )) {
+                        for (int i = 0; i < 10; i++) {
+                            if (game.get_blocks()[index2].getQuad().getTopY() ==
+                                game.get_blocks()[i].getQuad().getBottomY() + 5 &&
+                                ((game.get_blocks()[i].getQuad().getLeftX() <
+                                  game.get_blocks()[index2].getQuad().getCenterX() &&
+                                  game.get_blocks()[index2].getQuad().getCenterX() <
+                                  game.get_blocks()[i].getQuad().getRightX()) ||
+                                 (game.get_blocks()[index2].getQuad().getLeftX() ==
+                                  game.get_blocks()[i].getQuad().getLeftX() &&
+                                  game.get_blocks()[index2].getQuad().getRightX() >
+                                  game.get_blocks()[i].getQuad().getRightX()) ||
+                                 (game.get_blocks()[index2].getQuad().getRightX() ==
+                                  game.get_blocks()[i].getQuad().getRightX() &&
+                                  game.get_blocks()[index2].getQuad().getLeftX() <
+                                  game.get_blocks()[i].getQuad().getLeftX()))) {
                                 move = false;
                             }
                         }
@@ -247,28 +288,39 @@ void move_button(int x, int y) {
                         }
                     }
                 } else if (delta_x > delta_y && last_x < x) { //right
-                    if (game.get_board().getRightX() -75 > game.get_blocks()[index2].getQuad().getRightX()) {
+                    if (game.get_board().getRightX() - 75 > game.get_blocks()[index2].getQuad().getRightX()) {
                         bool move = true;
-                        for (int i=0; i<10; i++) {
-                            if ( game.get_blocks()[index2].getQuad().getRightX() == game.get_blocks()[i].getQuad().getLeftX() - 5 &&
-                                 ((game.get_blocks()[i].getQuad().getTopY() < game.get_blocks()[index2].getQuad().getCenterY() &&
-                                   game.get_blocks()[index2].getQuad().getCenterY() < game.get_blocks()[i].getQuad().getBottomY()) ||
+                        for (int i = 0; i < 10; i++) {
+                            if (game.get_blocks()[index2].getQuad().getRightX() ==
+                                game.get_blocks()[i].getQuad().getLeftX() - 5 &&
+                                ((game.get_blocks()[i].getQuad().getTopY() <
+                                  game.get_blocks()[index2].getQuad().getCenterY() &&
+                                  game.get_blocks()[index2].getQuad().getCenterY() <
+                                  game.get_blocks()[i].getQuad().getBottomY()) ||
 
-                                  // same Top
-                                  (game.get_blocks()[index2].getQuad().getTopY() == game.get_blocks()[i].getQuad().getTopY() &&
-                                   game.get_blocks()[index2].getQuad().getBottomY() > game.get_blocks()[i].getQuad().getBottomY()) ||
+                                 // same Top
+                                 (game.get_blocks()[index2].getQuad().getTopY() ==
+                                  game.get_blocks()[i].getQuad().getTopY() &&
+                                  game.get_blocks()[index2].getQuad().getBottomY() >
+                                  game.get_blocks()[i].getQuad().getBottomY()) ||
 
-                                  // same Bottom
-                                  (game.get_blocks()[index2].getQuad().getBottomY() == game.get_blocks()[i].getQuad().getBottomY() &&
-                                   game.get_blocks()[index2].getQuad().getTopY() < game.get_blocks()[i].getQuad().getTopY()) ||
+                                 // same Bottom
+                                 (game.get_blocks()[index2].getQuad().getBottomY() ==
+                                  game.get_blocks()[i].getQuad().getBottomY() &&
+                                  game.get_blocks()[index2].getQuad().getTopY() <
+                                  game.get_blocks()[i].getQuad().getTopY()) ||
 
-                                  // is moved in the Bottom
-                                  (game.get_blocks()[index2].getQuad().getBottomY() + 2.5 == game.get_blocks()[i].getQuad().getCenterY() &&
-                                   game.get_blocks()[index2].getQuad().getBottomY() < game.get_blocks()[i].getQuad().getBottomY()) ||
+                                 // is moved in the Bottom
+                                 (game.get_blocks()[index2].getQuad().getBottomY() + 2.5 ==
+                                  game.get_blocks()[i].getQuad().getCenterY() &&
+                                  game.get_blocks()[index2].getQuad().getBottomY() <
+                                  game.get_blocks()[i].getQuad().getBottomY()) ||
 
-                                  // is moved in the Top
-                                  (game.get_blocks()[index2].getQuad().getTopY() - 2.5 == game.get_blocks()[i].getQuad().getCenterY() &&
-                                   game.get_blocks()[index2].getQuad().getTopY() > game.get_blocks()[i].getQuad().getTopY()) )) {
+                                 // is moved in the Top
+                                 (game.get_blocks()[index2].getQuad().getTopY() - 2.5 ==
+                                  game.get_blocks()[i].getQuad().getCenterY() &&
+                                  game.get_blocks()[index2].getQuad().getTopY() >
+                                  game.get_blocks()[i].getQuad().getTopY()))) {
                                 move = false;
                             }
                         }
@@ -282,30 +334,41 @@ void move_button(int x, int y) {
                     if (game.get_board().getLeftX() + 75 < game.get_blocks()[index2].getQuad().getLeftX()) {
                         bool move = true;
 
-                        for (int i=0; i<10; i++) {
-                            if ( game.get_blocks()[index2].getQuad().getLeftX() == game.get_blocks()[i].getQuad().getRightX() + 5 &&
-                                 ((game.get_blocks()[i].getQuad().getTopY() < game.get_blocks()[index2].getQuad().getCenterY() &&
-                                   game.get_blocks()[index2].getQuad().getCenterY() < game.get_blocks()[i].getQuad().getBottomY()) ||
+                        for (int i = 0; i < 10; i++) {
+                            if (game.get_blocks()[index2].getQuad().getLeftX() ==
+                                game.get_blocks()[i].getQuad().getRightX() + 5 &&
+                                ((game.get_blocks()[i].getQuad().getTopY() <
+                                  game.get_blocks()[index2].getQuad().getCenterY() &&
+                                  game.get_blocks()[index2].getQuad().getCenterY() <
+                                  game.get_blocks()[i].getQuad().getBottomY()) ||
 
-                                  // same top
-                                  (game.get_blocks()[index2].getQuad().getTopY() == game.get_blocks()[i].getQuad().getTopY() &&
-                                   game.get_blocks()[index2].getQuad().getBottomY() > game.get_blocks()[i].getQuad().getBottomY()) ||
+                                 // same top
+                                 (game.get_blocks()[index2].getQuad().getTopY() ==
+                                  game.get_blocks()[i].getQuad().getTopY() &&
+                                  game.get_blocks()[index2].getQuad().getBottomY() >
+                                  game.get_blocks()[i].getQuad().getBottomY()) ||
 
-                                  // same bottom
-                                  (game.get_blocks()[index2].getQuad().getBottomY() == game.get_blocks()[i].getQuad().getBottomY() &&
-                                   game.get_blocks()[index2].getQuad().getTopY() < game.get_blocks()[i].getQuad().getTopY()) ||
+                                 // same bottom
+                                 (game.get_blocks()[index2].getQuad().getBottomY() ==
+                                  game.get_blocks()[i].getQuad().getBottomY() &&
+                                  game.get_blocks()[index2].getQuad().getTopY() <
+                                  game.get_blocks()[i].getQuad().getTopY()) ||
 
-                                  // same middle from top
-                                  (game.get_blocks()[index2].getQuad().getTopY() < game.get_blocks()[i].getQuad().getBottomY() &&
-                                   game.get_blocks()[index2].getQuad().getTopY() - 2.5 == game.get_blocks()[i].getQuad().getCenterY()) ||
+                                 // same middle from top
+                                 (game.get_blocks()[index2].getQuad().getTopY() <
+                                  game.get_blocks()[i].getQuad().getBottomY() &&
+                                  game.get_blocks()[index2].getQuad().getTopY() - 2.5 ==
+                                  game.get_blocks()[i].getQuad().getCenterY()) ||
 
-                                  // same middle from bottom
-                                  (game.get_blocks()[index2].getQuad().getCenterY() + 2.5 == game.get_blocks()[i].getQuad().getTopY() &&
-                                   game.get_blocks()[index2].getQuad().getBottomY() > game.get_blocks()[i].getQuad().getTopY()) )) {
+                                 // same middle from bottom
+                                 (game.get_blocks()[index2].getQuad().getCenterY() + 2.5 ==
+                                  game.get_blocks()[i].getQuad().getTopY() &&
+                                  game.get_blocks()[index2].getQuad().getBottomY() >
+                                  game.get_blocks()[i].getQuad().getTopY()))) {
                                 move = false;
                             }
                         }
-                        if(move){
+                        if (move) {
                             game.move_buttons_left(index2);
                             changes = 4;
                             click = false;
@@ -315,6 +378,14 @@ void move_button(int x, int y) {
 //                click = false;
             }
             index2++;
+        }
+        //test for detecting end of the game.
+        if (game.get_over_position().y == game.get_blocks()[1].getQuad().getCenterY()) {
+            if (game.get_over_position().x == game.get_blocks()[1].getQuad().getCenterX()) {
+                ending_move = true;
+                if (sound)
+                    play_sound3();
+            }
         }
     }
 }
@@ -368,6 +439,5 @@ int main(int argc, char** argv){
 
     return 0;
 }
-
 
 
