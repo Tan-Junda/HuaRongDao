@@ -37,6 +37,7 @@ public:
     void move_buttons_right(int index);
     void move_buttons_left(int index);
     void move_buttons_down(int index);
+    void move_buttons_down(int index, int distance);
     void move_buttons_up(int index);
     void pressDown(int index);
     void release(int index);

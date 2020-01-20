@@ -87,6 +87,12 @@ void Game::move_buttons_down(int index) {
     blocks[index].moves("down");
 }
 
+void Game::move_buttons_down(int index, int distance) {
+    blocks[index].moves("down", distance);
+}
+
+
+
 void Game::move_buttons_up(int index) {
     blocks[index].moves("up");
 }

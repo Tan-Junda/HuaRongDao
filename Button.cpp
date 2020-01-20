@@ -81,3 +81,14 @@ Quad Button::getQuad() {
     return box;
 }
 
+void Button::moves(std::string direction, int distance) {
+    if(direction == "up")
+        box.move(0,-distance);
+    if(direction == "down")
+        box.move(0,distance);
+    if(direction == "left")
+        box.move(-distance,0);
+    if(direction == "right")
+        box.move(distance,0);
+}
+

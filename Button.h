@@ -43,6 +43,8 @@ public:
     /* Moving button with press arrows*/
     void moves(std::string direction);
 
+    void moves(std::string direction, int distance);
+
     /* void every button is not overlapping*/
     //void isButtonOverlapping(int x, int y) const;
 
