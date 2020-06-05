@@ -156,6 +156,8 @@ void timer(int dummy) {
         game.move_buttons_down(1, 5);
         if (game.get_blocks()[1].getQuad().getCenterY() == game.get_over_position().y + 155 ) {
             ending_move = false;
+            if (sound)
+                play_sound3();
             window = End;
         }
     }
@@ -172,8 +174,8 @@ void play_sound1(){
     system("afplay /System/Library/Sounds/pop.aiff");
 #endif
 
-#ifdef __UNIX__
-    cout << "Haha1\n";
+#ifdef __linux__
+//    system("mpg123 /home/youyou/game.mp3");
 #endif
 }
 
@@ -190,8 +192,8 @@ void play_sound2(){
     system("afplay /System/Library/Sounds/glass.aiff");
 #endif
 
-#ifdef __UNIX__
-    cout << "Haha2\n";
+#ifdef __linux
+//    system("mpg123 /home/youyou/Music/1.m4a");
 #endif
 }
 
@@ -209,8 +211,8 @@ void play_sound3(){
     system("afplay /System/Library/Sounds/glass.aiff");
 #endif
 
-#ifdef __UNIX__
-    cout << "Haha2\n";
+#ifdef __linux
+    system("mpg123 /home/youyou/main.mp3");
 #endif
 }
 
@@ -383,8 +385,6 @@ void move_button(int x, int y) {
         if (game.get_over_position().y == game.get_blocks()[1].getQuad().getCenterY()) {
             if (game.get_over_position().x == game.get_blocks()[1].getQuad().getCenterX()) {
                 ending_move = true;
-                if (sound)
-                    play_sound3();
             }
         }
     }
