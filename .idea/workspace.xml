@@ -11,11 +11,32 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bac27f0e-09d7-4193-9af7-a471f73bf343" name="Default Changelist" comment=" linux sound changes">
+    <list default="true" id="bac27f0e-09d7-4193-9af7-a471f73bf343" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Button.h" beforeDir="false" afterPath="$PROJECT_DIR$/Button.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/audio.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphic.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/graphic.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HuaRongDao.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/HuaRongDao.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/HuaRongDao.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/freeglut.dll" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +61,32 @@
     <select />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Start</find>
+      <find>playSound1</find>
+      <find>down</find>
+      <find>Beep</find>
+      <find>play_sound2</find>
+      <find>space</find>
+      <find>kdb</find>
+      <find>kbd</find>
+      <find>300</find>
+      <find>play_sound1</find>
+      <find>play</find>
+      <find>play_sound</find>
+      <find>End</find>
+      <find>play_sound3);</find>
+      <find>play_sound3();</find>
+      <find>440</find>
+      <find>play_sound3</find>
+      <find>click</find>
+      <find>color</find>
+      <find>pressDown</find>
+      <find>sound</find>
+      <find>move</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -50,6 +97,11 @@
     <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="492" />
+    <option name="width" value="966" />
+    <option name="height" value="1092" />
+  </component>
   <component name="ProjectId" id="1VGilYEa4TViywkHF5pMqQI8Qe4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -61,7 +113,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="compiler&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Graphics-with-Shapes" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -78,12 +130,12 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.HuaRongDao">
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HuaRongDao" TARGET_NAME="HuaRongDao" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="HuaRongDao" RUN_TARGET_NAME="HuaRongDao">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HuaRongDao" TARGET_NAME="HuaRongDao" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="HuaRongDao" RUN_TARGET_NAME="HuaRongDao">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HuaRongDao" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HuaRongDao" TARGET_NAME="HuaRongDao" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="HuaRongDao" RUN_TARGET_NAME="HuaRongDao">
+    <configuration name="HuaRongDao" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HuaRongDao" TARGET_NAME="HuaRongDao" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="HuaRongDao" RUN_TARGET_NAME="HuaRongDao">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -164,11 +216,6 @@
       <workItem from="1579481231262" duration="2329000" />
       <workItem from="1579486986821" duration="5026000" />
       <workItem from="1579565190867" duration="54000" />
-      <workItem from="1579565914936" duration="2883000" />
-      <workItem from="1579995135921" duration="335000" />
-      <workItem from="1580159594225" duration="31000" />
-      <workItem from="1591355002582" duration="1083000" />
-      <workItem from="1591361587420" duration="869000" />
     </task>
     <task id="LOCAL-00001" summary="board completed">
       <created>1558417463500</created>
@@ -219,14 +266,7 @@
       <option name="project" value="LOCAL" />
       <updated>1577650049235</updated>
     </task>
-    <task id="LOCAL-00008" summary="fixed move click boolean, add playsound function">
-      <created>1579565979881</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1579565979881</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,38 +282,111 @@
     <option name="LAST_COMMIT_MESSAGE" value="fixed move click boolean, add playsound function" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="522" y="104" width="865" height="803" key="CommitChangelistDialog2" timestamp="1591362269441">
-      <screen x="0" y="0" width="1920" height="1016" />
+    <state x="587" y="237" width="735" height="566" key="#Build_All" timestamp="1579565243907">
+      <screen x="0" y="27" width="1920" height="988" />
     </state>
-    <state x="522" y="104" width="865" height="803" key="CommitChangelistDialog2/0.0.1920.1016@0.0.1920.1016" timestamp="1591362269441" />
-    <state x="182" y="85" width="1536" height="838" key="DiffContextDialog" timestamp="1591361669130">
-      <screen x="0" y="0" width="1920" height="1016" />
+    <state x="587" y="237" width="735" height="566" key="#Build_All/0.27.1920.988@0.27.1920.988" timestamp="1579565243907" />
+    <state x="485" y="151" width="940" height="824" key="#SOIL" timestamp="1577585887004">
+      <screen x="0" y="41" width="1920" height="1039" />
     </state>
-    <state x="182" y="85" width="1536" height="838" key="DiffContextDialog/0.0.1920.1016@0.0.1920.1016" timestamp="1591361669130" />
-    <state width="1874" height="288" key="GridCell.Tab.0.bottom" timestamp="1591362280736">
-      <screen x="0" y="0" width="1920" height="1016" />
+    <state x="485" y="151" width="940" height="824" key="#SOIL/0.41.1920.1039@0.41.1920.1039" timestamp="1577585887004" />
+    <state x="381" y="227" width="1099" height="781" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577585528412">
+      <screen x="0" y="41" width="1920" height="1039" />
     </state>
-    <state width="1874" height="288" key="GridCell.Tab.0.bottom/0.0.1920.1016@0.0.1920.1016" timestamp="1591362280736" />
-    <state width="1874" height="121" key="GridCell.Tab.0.bottom/0.0.1920.984@0.0.1920.984" timestamp="1591356085802" />
-    <state width="1874" height="288" key="GridCell.Tab.0.center" timestamp="1591362280736">
-      <screen x="0" y="0" width="1920" height="1016" />
+    <state x="381" y="227" width="1099" height="781" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.41.1920.1039@0.41.1920.1039" timestamp="1577585528412" />
+    <state x="475" y="291" width="960" height="487" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579565923284">
+      <screen x="0" y="27" width="1920" height="988" />
     </state>
-    <state width="1874" height="288" key="GridCell.Tab.0.center/0.0.1920.1016@0.0.1920.1016" timestamp="1591362280736" />
-    <state width="1874" height="121" key="GridCell.Tab.0.center/0.0.1920.984@0.0.1920.984" timestamp="1591356085801" />
-    <state width="1874" height="288" key="GridCell.Tab.0.left" timestamp="1591362280735">
-      <screen x="0" y="0" width="1920" height="1016" />
+    <state x="475" y="291" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.988@0.27.1920.988" timestamp="1579565923284" />
+    <state x="475" y="319" width="960" height="487" key="#com.intellij.fileTypes.FileTypeChooser/0.41.1920.1039@0.41.1920.1039" timestamp="1577636168600" />
+    <state x="1042" y="187" width="786" height="752" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577585903108">
+      <screen x="0" y="41" width="1920" height="1039" />
     </state>
-    <state width="1874" height="288" key="GridCell.Tab.0.left/0.0.1920.1016@0.0.1920.1016" timestamp="1591362280735" />
-    <state width="1874" height="121" key="GridCell.Tab.0.left/0.0.1920.984@0.0.1920.984" timestamp="1591356085801" />
-    <state width="1874" height="288" key="GridCell.Tab.0.right" timestamp="1591362280736">
-      <screen x="0" y="0" width="1920" height="1016" />
+    <state x="1042" y="187" width="786" height="752" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.41.1920.1039@0.41.1920.1039" timestamp="1577585903108" />
+    <state x="400" y="121" width="1071" height="959" key="CommitChangelistDialog2" timestamp="1577650048735">
+      <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1874" height="288" key="GridCell.Tab.0.right/0.0.1920.1016@0.0.1920.1016" timestamp="1591362280736" />
-    <state width="1874" height="121" key="GridCell.Tab.0.right/0.0.1920.984@0.0.1920.984" timestamp="1591356085801" />
-    <state x="616" y="329" key="com.intellij.ide.util.TipDialog" timestamp="1591361587432">
-      <screen x="0" y="0" width="1920" height="1016" />
+    <state x="521" y="143" width="867" height="820" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1576887107381" />
+    <state x="400" y="121" width="1071" height="959" key="CommitChangelistDialog2/0.34.1920.1046@0.34.1920.1046" timestamp="1577650048735" />
+    <state x="400" y="152" width="1192" height="810" key="CommitChangelistDialog2/0.41.1920.1039@0.41.1920.1039" timestamp="1577636141311" />
+    <state x="568" y="201" width="773" height="771" key="EnvironmentVariablesDialog" timestamp="1577585490796">
+      <screen x="0" y="41" width="1920" height="1039" />
     </state>
-    <state x="616" y="329" key="com.intellij.ide.util.TipDialog/0.0.1920.1016@0.0.1920.1016" timestamp="1591361587432" />
-    <state x="616" y="319" key="com.intellij.ide.util.TipDialog/0.0.1920.984@0.0.1920.984" timestamp="1591355002654" />
+    <state x="568" y="201" width="773" height="771" key="EnvironmentVariablesDialog/0.41.1920.1039@0.41.1920.1039" timestamp="1577585490796" />
+    <state x="1117" y="181" width="636" height="719" key="FileChooserDialogImpl" timestamp="1579481068125">
+      <screen x="0" y="27" width="1920" height="988" />
+    </state>
+    <state x="1117" y="181" key="FileChooserDialogImpl/0.27.1920.988@0.27.1920.988" timestamp="1579481068125" />
+    <state x="1117" y="203" width="636" height="719" key="FileChooserDialogImpl/0.41.1920.1039@0.41.1920.1039" timestamp="1577585881988" />
+    <state width="1860" height="167" key="GridCell.Tab.0.bottom" timestamp="1579565887269">
+      <screen x="0" y="27" width="1920" height="988" />
+    </state>
+    <state width="1866" height="145" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1577034780132" />
+    <state width="1860" height="167" key="GridCell.Tab.0.bottom/0.27.1920.988@0.27.1920.988" timestamp="1579565887269" />
+    <state width="1856" height="11" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1577650129299" />
+    <state width="1842" height="181" key="GridCell.Tab.0.bottom/0.41.1920.1039@0.41.1920.1039" timestamp="1577636220351" />
+    <state width="1860" height="167" key="GridCell.Tab.0.center" timestamp="1579565887267">
+      <screen x="0" y="27" width="1920" height="988" />
+    </state>
+    <state width="1866" height="145" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1577034780131" />
+    <state width="1860" height="167" key="GridCell.Tab.0.center/0.27.1920.988@0.27.1920.988" timestamp="1579565887267" />
+    <state width="1856" height="11" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1577650129298" />
+    <state width="1842" height="181" key="GridCell.Tab.0.center/0.41.1920.1039@0.41.1920.1039" timestamp="1577636220350" />
+    <state width="1860" height="167" key="GridCell.Tab.0.left" timestamp="1579565887265">
+      <screen x="0" y="27" width="1920" height="988" />
+    </state>
+    <state width="1866" height="145" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1577034780131" />
+    <state width="1860" height="167" key="GridCell.Tab.0.left/0.27.1920.988@0.27.1920.988" timestamp="1579565887265" />
+    <state width="1856" height="11" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1577650129298" />
+    <state width="1842" height="181" key="GridCell.Tab.0.left/0.41.1920.1039@0.41.1920.1039" timestamp="1577636220350" />
+    <state width="1860" height="167" key="GridCell.Tab.0.right" timestamp="1579565887268">
+      <screen x="0" y="27" width="1920" height="988" />
+    </state>
+    <state width="1866" height="145" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1577034780132" />
+    <state width="1860" height="167" key="GridCell.Tab.0.right/0.27.1920.988@0.27.1920.988" timestamp="1579565887268" />
+    <state width="1856" height="11" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1577650129299" />
+    <state width="1842" height="181" key="GridCell.Tab.0.right/0.41.1920.1039@0.41.1920.1039" timestamp="1577636220351" />
+    <state width="1860" height="258" key="GridCell.Tab.1.bottom" timestamp="1579481543111">
+      <screen x="0" y="27" width="1920" height="988" />
+    </state>
+    <state width="1860" height="258" key="GridCell.Tab.1.bottom/0.27.1920.988@0.27.1920.988" timestamp="1579481543111" />
+    <state width="1860" height="258" key="GridCell.Tab.1.center" timestamp="1579481543111">
+      <screen x="0" y="27" width="1920" height="988" />
+    </state>
+    <state width="1860" height="258" key="GridCell.Tab.1.center/0.27.1920.988@0.27.1920.988" timestamp="1579481543111" />
+    <state width="1860" height="258" key="GridCell.Tab.1.left" timestamp="1579481543110">
+      <screen x="0" y="27" width="1920" height="988" />
+    </state>
+    <state width="1860" height="258" key="GridCell.Tab.1.left/0.27.1920.988@0.27.1920.988" timestamp="1579481543110" />
+    <state width="1860" height="258" key="GridCell.Tab.1.right" timestamp="1579481543111">
+      <screen x="0" y="27" width="1920" height="988" />
+    </state>
+    <state width="1860" height="258" key="GridCell.Tab.1.right/0.27.1920.988@0.27.1920.988" timestamp="1579481543111" />
+    <state x="555" y="293" width="1000" height="657" key="Vcs.Push.Dialog.v2" timestamp="1577650052114">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="555" y="287" width="800" height="531" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1576887111041" />
+    <state x="555" y="293" width="1000" height="657" key="Vcs.Push.Dialog.v2/0.34.1920.1046@0.34.1920.1046" timestamp="1577650052114" />
+    <state x="555" y="298" width="865" height="524" key="Vcs.Push.Dialog.v2/0.41.1920.1039@0.41.1920.1039" timestamp="1577636145485" />
+    <state x="614" y="358" key="com.intellij.ide.util.TipDialog" timestamp="1579459814017">
+      <screen x="0" y="27" width="1920" height="988" />
+    </state>
+    <state x="614" y="380" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1577051204610" />
+    <state x="614" y="358" key="com.intellij.ide.util.TipDialog/0.27.1920.988@0.27.1920.988" timestamp="1579459814017" />
+    <state x="614" y="384" key="com.intellij.ide.util.TipDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1577648984299" />
+    <state x="614" y="389" key="com.intellij.ide.util.TipDialog/0.41.1920.1039@0.41.1920.1039" timestamp="1577636030617" />
+    <state x="696" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579565828185">
+      <screen x="0" y="27" width="1920" height="988" />
+    </state>
+    <state x="696" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1920.988@0.27.1920.988" timestamp="1579565828185" />
+    <state x="662" y="152" width="586" height="735" key="refactoring.ChangeSignatureDialog" timestamp="1579460977852">
+      <screen x="0" y="27" width="1920" height="988" />
+    </state>
+    <state x="662" y="152" width="586" height="735" key="refactoring.ChangeSignatureDialog/0.27.1920.988@0.27.1920.988" timestamp="1579460977852" />
+    <state x="453" y="27" width="1009" height="1049" key="search.everywhere.popup" timestamp="1577636382660">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="453" y="27" width="1009" height="1049" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1577636382660" />
+    <state x="453" y="39" width="1009" height="1470" key="search.everywhere.popup/0.41.1920.1039@0.41.1920.1039" timestamp="1577636328894" />
   </component>
 </project>

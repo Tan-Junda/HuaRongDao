@@ -171,7 +171,7 @@ void play_sound1(){
 #endif
 
 #ifdef __APPLE__
-    system("afplay /System/Library/Sounds/pop.aiff");
+    //system("afplay /System/Library/Sounds/Pop.aiff");
 #endif
 
 #ifdef __linux__
@@ -189,11 +189,11 @@ void play_sound2(){
 #endif
 
 #ifdef __APPLE__
-    system("afplay /System/Library/Sounds/glass.aiff");
+    //system("afplay /System/Library/Sounds/glass.aiff");
 #endif
 
 #ifdef __linux
-//    system("mpg123 /home/youyou/Music/1.m4a");
+    //system("mpg123 /home/youyou/Music/1.m4a");
 #endif
 }
 
@@ -208,11 +208,11 @@ void play_sound3(){
 #endif
 
 #ifdef __APPLE__
-    system("afplay /System/Library/Sounds/glass.aiff");
+    //system("afplay /System/Library/Sounds/glass.aiff");
 #endif
 
 #ifdef __linux
-    system("mpg123 /home/youyou/main.mp3");
+    //system("mpg123 /home/youyou/main.mp3");
 #endif
 }
 
